@@ -3,3 +3,5 @@ Gunicorn
 pymongo
 Werkzeug
 python-dotenv
+certifi
+dnspython
