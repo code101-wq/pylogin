@@ -5,8 +5,9 @@ from bson.objectid import ObjectId
 from werkzeug.utils import secure_filename
 
 # Set up connection
-MONGO_URI = os.environ.get('MONGO_URI')
-client = MongoClient(MONGO_URI)
+# MONGO_URI = os.environ.get('MONGO_URI')
+# client = MongoClient(MONGO_URI)
+client = MongoCLient('mongodb+srv://lobgafomboh_db_user:Trend123@intro.vd3ychr.mongodb.net/?retryWrites=true&w=majority&appName=Intro')
 db = client["pythonlogin"]
 accounts = db['accounts']
 
